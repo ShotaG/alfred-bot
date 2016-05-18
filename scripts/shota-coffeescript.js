@@ -1,4 +1,4 @@
-/*module.exports = function(robot) {
+module.exports = function(robot) {
   var lulz;
   robot.hear(/badger/i, function(res) {
     return res.send("Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS");
@@ -25,4 +25,4 @@
   robot.hear(/These boots/, function(response) {
     return response.send('...are made for walkin yo');
   });
-} */
+} 

@@ -1,4 +1,4 @@
-module.exports = function(robot) {
+/*module.exports = function(robot) {
 	robot.respond(/Hi (.*), my name is Shuzaambot/i, function(message){
 		var name = message.match[1];
 		if (name == 'Raffi') {
@@ -28,4 +28,4 @@ module.exports = function(ackbar) {
   return ackbar.hear(/it['’]?s a trap\b/i, function(msg) {
     return msg.send(msg.random(ackbars));
   });
-}
+}*/
