@@ -1,3 +1,4 @@
+
 module.exports = function(robot) {
 	robot.respond(/Hi Shuzaambot, my name is (.*)/i, function(message){
 		var name = message.match[1];
@@ -28,4 +29,4 @@ module.exports = function(ackbar) {
   return ackbar.hear(/it['’]?s a trap\b/i, function(msg) {
     return msg.send(msg.random(ackbars));
   });
-}
+}*/
