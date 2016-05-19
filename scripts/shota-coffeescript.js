@@ -1,5 +1,8 @@
 module.exports = function(robot) {
   var lulz;
+  robot.hear(/aardvark/i, function(res){
+    return res.send('What a silly looking animal!');
+  });
   robot.hear(/badger/i, function(res) {
     return res.send("Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS");
   });
@@ -25,4 +28,22 @@ module.exports = function(robot) {
   robot.hear(/These boots/, function(response) {
     return response.send('...are made for walkin yo');
   });
-} 
+  robot.respond(/Hi (.*), my name is Shuzaambot/i, function(message){
+    var name = message.match[1];
+    if (name == 'Raffi') {
+      return message.send('The force is strong with you!');
+    } else if (name == 'Yoda' || name == 'Obi Wan') {
+      return message.send('You are a Jedi knight!');
+    } else {
+      return message.reply('Hello ' + name + ', I am Shuzaambot');
+    }
+  });
+  
+  
+
+  robot.respond(/convert \$(.*) to btc/i, function(res){
+        var usd = res.match[1];
+        res.reply('That is about ' + usd * 0.0024 + ' in BTC');
+    });
+
+
