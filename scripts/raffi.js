@@ -28,4 +28,4 @@ module.exports = function(ackbar) {
   return ackbar.hear(/it['’]?s a trap\b/i, function(msg) {
     return msg.send(msg.random(ackbars));
   });
-};
+}
