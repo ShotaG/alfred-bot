@@ -1,5 +1,5 @@
 module.exports = function(robot) {
-	robot.respond(/Hi (.*), my name is Shuzaambot/i, function(message){
+	robot.respond(/Hi Shuzaambot, my name is (.*)/i, function(message){
 		var name = message.match[1];
 		if (name == 'Raffi') {
 			return message.send('The force is strong with you!');
@@ -18,7 +18,7 @@ module.exports = function(robot) {
         var usd = res.match[1];
         res.reply('That is about ' + usd * 0.0024 + ' in BTC');
     });
-}
+};
 
 var ackbars;
 
