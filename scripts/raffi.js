@@ -1,5 +1,5 @@
 
-module.exports = function(robot) {
+/*module.exports = function(robot) {
 	robot.respond(/Hi Alfred! My name is (.*)/i, function(message){
 		var name = message.match[1];
 		if (name == 'Raffi') {
@@ -19,7 +19,24 @@ module.exports = function(robot) {
         var usd = res.match[1];
         return res.reply('That is about ' + usd * 0.0024 + ' in BTC');
     });
-};
+};*/
+
+module.exports = function(robot) {
+	robot.hear(/duck/, function(response){
+		return response.send('Quack Quack!');
+	})
+}
+
+module.exports = function(robot) {
+	robot.respond(/Hi Shuzaambot! My name is (.*)/i, function(message){
+		var name = message.match[1];
+		if (name == 'Raffi') {
+			return message.send('Hello Raffi, the force is strong with you!');
+		} else {
+			return message.reply('Nice to meet you, ' + name + '!');
+		}
+	})
+}
 
 var ackbars;
 
