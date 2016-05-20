@@ -53,6 +53,10 @@ module.exports = function(robot) {
 		return res.send('Quack!!');
 	});
 
+	robot.hear(/aardvark/, function(res) {
+		return res.send('What a silly looking animal!!');
+	});
+
 	robot.respond(/Hi Alfred! My name is (.*)/i, function(message){
 		var name = message.match[1];
 		if (name == 'Raffi') {
