@@ -1,4 +1,4 @@
-module.exports = function(robot) {
+/*module.exports = function(robot) {
   var lulz;
   robot.hear(/aardvark/i, function(res){
     return res.send('What a silly looking animal!');
@@ -44,6 +44,6 @@ module.exports = function(robot) {
   robot.respond(/convert \$(.*) to btc/i, function(res){
         var usd = res.match[1];
         res.reply('That is about ' + usd * 0.0024 + ' in BTC');
-    });
+    });*/
 
 

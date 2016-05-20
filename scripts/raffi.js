@@ -11,13 +11,13 @@ module.exports = function(robot) {
 		}
 	})
 	
-	robot.hear(/ardvark/i, function(theMsg){
-		theMsg.send('What a silly looking animal!');
+	robot.hear(/aardvark/i, function(theMsg){
+		return theMsg.send('What a silly looking animal!');
 	});
 
 	robot.respond(/convert \$(.*) to btc/i, function(res){
         var usd = res.match[1];
-        res.reply('That is about ' + usd * 0.0024 + ' in BTC');
+        return res.reply('That is about ' + usd * 0.0024 + ' in BTC');
     });
 };
 
