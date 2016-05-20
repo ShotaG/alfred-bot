@@ -52,4 +52,15 @@ module.exports = function(robot) {
 	robot.hear(/Hello!/, function(res) {
 		return res.send('Hi there!');
 	});
+
+	robot.respond(/Hi Alfred! My name is (.*)/i, function(message){
+		var name = message.match[1];
+		if (name == 'Raffi') {
+			return message.send('Hi ' + name + ', The force is strong with you!');
+		} else if (name == 'Yoda' || name == 'Obi Wan') {
+			return message.send(name + '!!! ' + 'You are a Jedi knight!');
+		} else {
+			return message.reply('Hello ' + name + ', I am Shuzaambot');
+		}
+	});
 };
