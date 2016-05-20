@@ -15,6 +15,9 @@ module.exports = function(robot) {
   robot.hear(/I like pie/i, function(res) {
     return res.emote("makes a freshly baked pie");
   });
+  robot.respond(/Alfred, is Bruce Wayne actually Batman?/, function(message) {
+    return message.send("Sir, I take the fifth...");
+  });
   /*lulz = ['lol', 'rofl', 'lmao'];
   robot.respond(/lulz/i, function(res) {
     return res.send(res.random(lulz));
