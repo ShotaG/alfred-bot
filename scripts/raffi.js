@@ -9,10 +9,10 @@ module.exports = function(robot) {
 		} else {
 			return message.reply('Hello ' + name + ', I am Shuzaambot');
 		}
-	})
+	});
 	
-	robot.hear(/aardvark/i, function(theMsg){
-		return theMsg.send('What a silly looking animal!');
+	robot.hear(/aardvark/i, function(res){
+		return res.send('What a silly looking animal!');
 	});
 
 	robot.respond(/convert \$(.*) to btc/i, function(res){
