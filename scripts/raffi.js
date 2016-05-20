@@ -64,8 +64,8 @@ module.exports = function(robot) {
 		}
 	});
 
-	robot.hear(/duck/i, function(res){
-		return res.send('Quack Quack!');
+	robot.hear(/duck/, function(res) {
+		return res.send('Quack Quack');
 	});
 };
 
