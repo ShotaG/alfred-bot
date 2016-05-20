@@ -1,5 +1,15 @@
 module.exports = function(robot) {
   var lulz;
+  robot.respond(/Hi Shuzaambot, my name is (.*)/i, function(res){
+    var name = res.match[1];
+    if (name == 'Raffi') {
+      return res.send('The force is strong with you!');
+    } else if (name == 'Yoda' || name == 'Obi Wan') {
+      return res.send('You are a Jedi knight!');
+    } else {
+      return res.reply('Hello ' + name + ', I am Shuzaambot');
+    }
+  });
   robot.hear(/aardvark/i, function(res){
     return res.send('What a silly looking animal!');
   });
