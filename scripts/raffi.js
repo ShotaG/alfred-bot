@@ -63,7 +63,7 @@ module.exports = function(robot) {
 
 	robot.respond(/Hi Alfred! My name is (.*)/i, function(message){
 		var name = message.match[1];
-		if (name == 'Raffi') {
+		if (name == 'Raffi' || name == 'Shota') {
 			return message.send('Hi ' + name + ', The force is strong with you!');
 		} else if (name == 'Yoda' || name == 'Obi Wan') {
 			return message.send(name + '!!! ' + 'You are a Jedi knight!');
