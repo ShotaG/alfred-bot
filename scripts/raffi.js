@@ -11,6 +11,10 @@ module.exports = function(robot) {
 		}
 	});
 	
+	robot.hear(/aardvark/i, function(res){
+		return res.send('What a silly looking animal!');
+	});
+	
 	robot.hear(/duck/i, function(res){
 		return res.send('Quack Quack!');
 	});
