@@ -60,7 +60,7 @@ module.exports = function(robot) {
 		} else if (name == 'Yoda' || name == 'Obi Wan') {
 			return message.send(name + '!!! ' + 'You are a Jedi knight!');
 		} else {
-			return message.reply('Hello ' + name + ', I am Shuzaambot');
+			return message.reply('Hello ' + name + ', I am Alfred');
 		}
 	});
 };
