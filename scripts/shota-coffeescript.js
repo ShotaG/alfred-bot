@@ -1,3 +1,5 @@
+var enterReplies, leaveReplies;
+
 module.exports = function(robot) {
   /*var lulz;*/
     robot.hear(/badger/i, function(res) {
@@ -28,6 +30,18 @@ module.exports = function(robot) {
   robot.hear(/These boots/, function(response) {
     return response.send('...are made for walkin yo');
   });
+  enterReplies = ['Hi', 'Target Acquired', 'Firing', 'Hello friend.', 'Gotcha', 'I see you'];
+
+  leaveReplies = ['Are you still there?', 'Target lost', 'Searching'];
+
+  robot.enter(function(res) {
+    return res.send(res.random(enterReplies));
+  });
+
+  robot.leave(function(res) {
+    return res.send(res.random(leaveReplies));
+  });
+
   }
   
   
