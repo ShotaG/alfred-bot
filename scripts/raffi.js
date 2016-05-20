@@ -49,8 +49,8 @@ module.exports = function(ackbar) {
 };*/
 
 module.exports = function(robot) {
-	robot.hear(/Hello!/, function(res) {
-		return res.send('Hi there!');
+	robot.hear(/duck/, function(res) {
+		return res.send('Quack!!');
 	});
 
 	robot.respond(/Hi Alfred! My name is (.*)/i, function(message){
