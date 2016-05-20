@@ -8,7 +8,7 @@ module.exports = function(robot) {
   robot.respond(/open the (.*) doors/i, function(res) {
     var doorType;
     doorType = res.match[1];
-    if (doorType === "pod bay") {
+    if (doorType == "batcave") {
       return res.reply("I'm afraid I can't let you do that.");
     } else {
       return res.reply("Opening " + doorType + " doors");
@@ -30,9 +30,9 @@ module.exports = function(robot) {
   robot.hear(/These boots/, function(response) {
     return response.send('...are made for walkin yo');
   });
-  enterReplies = ['Hi', 'Target Acquired', 'Firing', 'Hello friend.', 'Gotcha', 'I see you'];
+  enterReplies = ['Hi', 'Batman is that you?', 'Is Robin with you?', 'Hello friend.', 'Been a while', 'I see you'];
 
-  leaveReplies = ['Are you still there?', 'Target lost', 'Searching'];
+  leaveReplies = ['Are you still there?', 'Hope to see you again soon', 'Thank you, come again', 'To the Batcave!'];
 
   robot.enter(function(res) {
     return res.send(res.random(enterReplies));
