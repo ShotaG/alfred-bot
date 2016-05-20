@@ -72,6 +72,7 @@ module.exports = function(robot) {
 		}
 	});
 
-	return robot.hear(/it['’]?s a trap\b/i, function(msg) {
-    return msg.send(msg.random(ackbars));
+	robot.hear(/it['’]?s a trap\b/i, function(msg) {
+    	return msg.send(msg.random(ackbars));
+	});
 };
