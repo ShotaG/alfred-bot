@@ -1,6 +1,6 @@
 
 module.exports = function(robot) {
-	robot.respond(/Hi Shuzaambot! My name is (.*)/i, function(message){
+	robot.respond(/Hi Alfred! My name is (.*)/i, function(message){
 		var name = message.match[1];
 		if (name == 'Raffi') {
 			return message.send('Hi ' + name + ', The force is strong with you!');
