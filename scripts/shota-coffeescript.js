@@ -1,8 +1,8 @@
-var enterReplies, leaveReplies;
+/*var enterReplies, leaveReplies;
 
-module.exports = function(robot) {
+module.exports = function(robot) {*/
   /*var lulz;*/
-    robot.hear(/badger/i, function(res) {
+    /*robot.hear(/badger/i, function(res) {
     return res.send("Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS");
   });
   robot.respond(/open the (.*) doors/i, function(res) {
@@ -19,7 +19,7 @@ module.exports = function(robot) {
   });
   robot.respond(/Alfred, is Bruce Wayne actually Batman?/, function(message) {
     return message.send("Sir, I take the fifth...");
-  });
+  });*/
   /*lulz = ['lol', 'rofl', 'lmao'];
   robot.respond(/lulz/i, function(res) {
     return res.send(res.random(lulz));
@@ -27,7 +27,7 @@ module.exports = function(robot) {
   return robot.topic(function(res) {
     return res.send(res.message.text + "? That's a Paddlin'");
   });*/
-  robot.hear(/These boots/, function(response) {
+  /*robot.hear(/These boots/, function(response) {
     return response.send('...are made for walkin yo');
   });
   enterReplies = ['Hi', 'Batman is that you?', 'Is Robin with you?', 'Hello friend.', 'Been a while', 'I see you'];
@@ -42,7 +42,7 @@ module.exports = function(robot) {
     return res.send(res.random(leaveReplies));
   });
 
-  }
+  }*/
   
   
 
