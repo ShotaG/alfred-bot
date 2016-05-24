@@ -44,9 +44,9 @@ module.exports = function(robot) {
 
   robot.respond(/just curious, are batman and robin, like an item/, function(res) {
     return res.reply("Come to think of it, they do spend an aweful lot of time together...why are you jealous?");
-    return setTimeout(function() {
-    return res.send("...because I am...::sniff sniff::");
-  }, 3 * 1000);
+    setTimeout(function() {
+    return res.reply("...because I am...::sniff sniff::");
+  }, 2000);
   
   });
 
