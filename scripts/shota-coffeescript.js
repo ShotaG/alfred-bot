@@ -43,7 +43,7 @@ module.exports = function(robot) {
   });
 
   robot.respond(/just curious, are batman and robin, like an item/, function(res) {
-    return res.reply("Come to think of it, they do spend an aweful lot of time together...why are you jealous?... because I am...::sniff sniff::");
+    return res.reply("Come to think of it, they do spend an aweful lot of time together...why are you jealous?... because I am...sniff sniff");
   });
   /*robot.respond(/just curious, are batman and robin, like an item/, function(res) {
     return setTimeout(function() {
