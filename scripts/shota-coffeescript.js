@@ -2,7 +2,7 @@ var enterReplies, leaveReplies;
 
 module.exports = function(robot) {
   /*var lulz;*/
-    robot.hear(/bat/i, function(res) {
+    robot.hear(/bats/i, function(res) {
     return res.send("Batman? BATMAN? Master Wayne, is that you?");
   });
   robot.respond(/open the (.*) doors/i, function(res) {
