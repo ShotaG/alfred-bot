@@ -48,7 +48,7 @@ module.exports = function(robot) {
   robot.respond(/just curious, are batman and robin, like an item/, function(res) {
     return setTimeout(function() {
     return res.send("...because I am...sniff sniff");
-    }, 2000);
+    }, 5000);
   });
 
   }
