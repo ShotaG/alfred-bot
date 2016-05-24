@@ -44,12 +44,12 @@ module.exports = function(robot) {
 
   robot.respond(/just curious, are batman and robin, like an item/, function(res) {
     return res.reply("Come to think of it, they do spend an aweful lot of time together...why are you jealous?");
-    setTimeout(function() {
-    return res.reply("...because I am...::sniff sniff::");
-  }, 2000);
-  
   });
-
+  robot.respond(/just curious, are batman and robin, like an item/, function(res) {
+    return setTimeout(function() {
+    return res.send("...because I am...::sniff sniff::");
+    }, 2000);
+  });
 
   }
   
