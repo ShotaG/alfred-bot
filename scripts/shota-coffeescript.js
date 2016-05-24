@@ -2,20 +2,20 @@ var enterReplies, leaveReplies;
 
 module.exports = function(robot) {
   /*var lulz;*/
-    robot.hear(/badger/i, function(res) {
-    return res.send("Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS");
+    robot.hear(/bat/i, function(res) {
+    return res.send("Batman? BATMAN? Master Wayne, is that you?");
   });
   robot.respond(/open the (.*) doors/i, function(res) {
     var doorType;
     doorType = res.match[1];
     if (doorType == "batcave") {
-      return res.reply("I'm afraid I can't let you do that.");
+      return res.reply("I'm afraid I have no idea what you're talking about. What 'batcave'?");
     } else {
       return res.reply("Opening " + doorType + " doors");
     }
   });
   robot.hear(/I like pie/i, function(res) {
-    return res.emote("makes a freshly baked pie");
+    return res.reply("Great, if you could order me a lemon merengue, that would be lovely. It would be nice to be served for a change.");
   });
   robot.respond(/Alfred, is Bruce Wayne actually Batman?/, function(message) {
     return message.send("Sir, I take the fifth...");
