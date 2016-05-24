@@ -46,9 +46,9 @@ module.exports = function(robot) {
     return res.reply("Come to think of it, they do spend an aweful lot of time together...why are you jealous?");
     return setTimeout(function() {
     return res.send("...because I am...::sniff sniff::");
-  3 * 1000);
-  }
-});
+  }, 3 * 1000);
+  
+  });
 
 
   }
