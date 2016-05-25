@@ -46,18 +46,11 @@ module.exports = function(robot) {
     return res.reply("Come to think of it, they do spend an aweful lot of time together...why are you jealous?");
   });
   robot.respond(/just curious, are batman and robin, like an item/, function(res) {
-    return albertResponse();
-    // return setTimeout(function() {
-    // return res.send("...because I am...sniff sniff");
-    // }, 5000);
+    return setTimeout(function() {
+    return res.send("...because I am...sniff sniff");
+    }, 5000);
   });
 
-  var albertResponse = function() {
-    res.reply("Come to think of it, they do spend an aweful lot of time together...why are you jealous?");
-    setTimeout(function() {
-      res.send("...because I am...sniff sniff");
-    }, 5000);
-  }
 
   }
   
